@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Davyltas Launcher</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: white;
+      background: #101510;
+    }
+    header {
+      padding: 22px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #090d0a;
+      border-bottom: 1px solid #28372a;
+    }
+    .logo { font-size: 23px; font-weight: bold; }
+    .logo span { color: #61e65e; }
+    nav a {
+      color: #ccc;
+      text-decoration: none;
+      margin-left: 20px;
+    }
+    .hero {
+      min-height: 440px;
+      padding: 90px 8%;
+      background: radial-gradient(ellipse at 80% 30%, #28552b, transparent 50%),
+                  linear-gradient(120deg, #18261a, #101510);
+    }
+    .tag { color: #7cf477; letter-spacing: 3px; }
+    h1 { font-size: clamp(38px, 7vw, 70px); margin: 20px 0; }
+    .hero p { color: #c2cfc2; max-width: 520px; line-height: 1.7; }
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 16px 28px;
+      background: #53d94f;
+      color: #071007;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 6px;
+    }
+    .btn:hover { background: #7cf477; }
+    section { padding: 45px 8%; }
+    h2 { font-size: 30px; }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 18px;
+    }
+    .card {
+      padding: 24px;
+      background: #1a241b;
+      border: 1px solid #2b3b2c;
+      border-radius: 10px;
+    }
+    .card p { color: #b8c5b9; line-height: 1.6; }
+    footer {
+      padding: 25px;
+      text-align: center;
+      color: #849084;
+      background: #090d0a;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">DAVYLTAS<span> LAUNCHER</span></div>
+    <nav><a href="#features">Возможности</a><a href="#news">Новости</a></nav>
+  </header>
+
+  <main>
+    <div class="hero">
+      <div class="tag">ТВОЁ СЛЕДУЮЩЕЕ ПРИКЛЮЧЕНИЕ</div>
+      <h1>Играй по-своему.</h1>
+      <p>Davyltas Launcher — твой портал в мир Minecraft.
+      Готовься к приключениям, строй и создавай собственную историю.</p>
+      <a class="btn" href="#download">СКОРО СКАЧАТЬ</a>
+    </div>
+
+    <section id="features">
+      <h2>Почему Davyltas?</h2>
+      <div class="cards">
+        <div class="card"><h3>🎮 Твой мир</h3><p>Приключения и новые возможности Minecraft.</p></div>
+        <div class="card"><h3>⚡ Удобно</h3><p>Лаунчер с простым и понятным интерфейсом.</p></div>
+        <div class="card"><h3>🌍 Сообщество</h3><p>Следи за обновлениями проекта и новостями.</p></div>
+      </div>
+    </section>
+
+    <section id="news">
+      <h2>Новости проекта</h2>
+      <div class="card">
+        <h3>🚀 Davyltas Launcher в разработке!</h3>
+        <p>Мы готовим проект. Следи за обновлениями!</p>
+      </div>
+    </section>
+
+    <section id="download">
+      <h2>Скачать лаунчер</h2>
+      <p>Установочный файл появится здесь после выпуска лаунчера.</p>
+    </section>
+  </main>
+
+  <footer>© 2026 Davyltas Launcher · Фанатский проект Minecraft</footer>
+</body>
+</html>
